@@ -1,9 +1,1 @@
-MONGODB_URI=mongodb+srv://laishramjohn:Johnny12@cluster0.3m3dr31.mongodb.net
-PORT=8080
-JWT_SECRET="secret#text"
-
-CLIPDROP_API=e9789b2d81503c21c48785309da2a7d3682b8aeec6c44fa4da8341374b1bfd0adf17b4f6e93d908e309903660bccea42
-
-RAZORPAY_KEY_ID="rzp_test_RL8RMRdN5ioqsC"
-RAZORPAY_KEY_SECRET="o0KOdPyVNLeGVzp2XEtxkt6r"
-CURRENCY="INR"
+.env
