@@ -12,23 +12,24 @@ const AppContextProvider = (props) => {
    const backendUrl = import.meta.env.VITE_BACKEND_URL;
    const navigate = useNavigate();
 
-   const loadCreditsData = async () => {
-      try {
-         const { data } = await axios.get(
-            backendUrl + '/api/user/credits',
-            { userId: user._id } // send userId in body
-            , { headers: { token } }
-         );
+  const loadCreditsData = async () => {
+  try {
+    const { data } = await axios.post(
+      `${backendUrl}/api/user/credits`,
+      { userId: user?._id },
+      { headers: { token } }
+    );
 
-         if (data.success) {
-            setCredit(data.credit);
-            setUser(data.user);
-         }
-      } catch (error) {
-         console.log(error);
-         toast.error("Something went wrong while loading credits");
-      }
-   };
+    if (data.success) {
+      setCredit(data.credit);
+      setUser(data.user);
+    }
+  } catch (error) {
+    console.error("Credit load error:", error.response?.data || error.message);
+    toast.error("Something went wrong while loading credits");
+  }
+};
+
 
    const generateImage = async (prompt) => {
       if (!user) return; // prevent error

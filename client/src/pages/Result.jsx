@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { AppContext } from "../context/AppContext"; // make sure to import this
 
 const Result = () => {
-  const [image, setImage] = React.useState(assets.sample_img_1);
+  const [image, setImage] = React.useState(assets.imgen2);
   const [isImageLoading, setIsImageLoading] = React.useState(false);
   const [loading, setLoading] = React.useState(false);
   const [input, setInput] = React.useState("");

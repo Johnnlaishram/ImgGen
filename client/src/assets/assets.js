@@ -20,8 +20,14 @@ import credit_star from './credit_star.svg'
 import profile_icon from './profile_icon.png'
 import lele from './lele.svg'
 import logo2 from './logo2.png'
+import imgen1 from './imgen1.png'
+import imgen2 from './imgen2.png'
+import imgen3 from './imgen3.png'
 
 export const assets = {
+    imgen1,
+    imgen2,
+    imgen3,
     lele,
     logo2,
     logo,

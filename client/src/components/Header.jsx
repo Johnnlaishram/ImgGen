@@ -84,7 +84,7 @@ const Header = () => {
           <img 
             key={index}
             className='rounded hover:scale-105 transition-all duration-300 cursor-pointer max-sm:w-10' 
-            src={index % 2 === 0 ? assets.sample_img_2 : assets.sample_img_1} 
+            src={index % 2 === 0 ? assets.imgen1 : assets.imgen2} 
             alt={`sample-${index}`}  
             width={70}
           />
